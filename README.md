@@ -6,7 +6,7 @@ In future relases Helproku will be able to add features to your app wholesale. F
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your application's Gemfile (or make a command line alias that runs a Rails application template to do this for you, as suggested in the Usage section):
 
     gem 'helproku'
 
@@ -17,6 +17,14 @@ And then execute:
 Or install it yourself as:
 
     $ gem install helproku
+
+## Available Commands
+
+All of these commands are namespaced under the helproku generator. That is, if you want to run the `init` command, you should type `rails generator helproku:init`.
+
+###init
+
+This command modifies the gem and database configuration files of a standard `rails new` installation to ensure that it is compatible with Heroku. It creates a local git repository for you and pushes that on to Github in a repository with the same name as your Rails app. It also creates a new Heroku app for you and pushes it there too. You should now have a functioning Heroku app!
 
 ## Usage
 
