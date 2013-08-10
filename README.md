@@ -22,12 +22,12 @@ Or install it yourself as:
 
 Helproku is best used in conjunction with a Rails application template, which is available on this repsository.
 
-    rails new [APP NAME] -m [LOCATION OF APPLICATION TEMPLATE]
+    rails new [APP NAME] -m https://raw.github.com/garetht/helproku/master/template.rb
 
 You can alias this in .bash_profile to a command like `railsnew`, like such:
 
     railsnew(){
-      rails new $1 -m [LOCATION OF APPLICATION TEMPLATE]
+      rails new $1 -m https://raw.github.com/garetht/helproku/master/template.rb
     }
 
 which can then replace your `rails new` command.
